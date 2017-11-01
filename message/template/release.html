@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+    {include file="header.html"}
+
+    <div id="release">
+        <h2>发表简单留言板</h2>
+        <a href="index.php">返回</a>
+        <form method="post" action="release.php">
+            <table>
+                <tr><td>　　昵称：<input type="text" name="name"><span class="red">　(*必填){$nameNull}</span></td></tr>
+                <tr><td>　　邮箱：<input type="text" name="email"></td></tr>
+                <tr><td>标题颜色：<select name="color">
+                    <option style="background: sandybrown;" value="">随机</option>
+                    <option style="background: sandybrown;" value="sandybrown">橙色</option>
+                    <option style="background: deepskyblue;" value="deepskyblue">蓝色</option>
+                    <option style="background: greenyellow;" value="greenyellow">绿色</option>
+                    <option style="background: salmon;" value="salmon">粉色</option>
+                    <option style="background: blanchedalmond;" value="blanchedalmond">米色</option>
+                    <option style="background: white;" value="white">白色</option>
+                    <option style="background: springgreen;" value="springgreen"></option>
+                    <option style="background: coral;" value="coral"></option>
+                    <option style="background: palevioletred;" value="palevioletred"></option>
+                </select></td></tr>
+                <tr><td><span class="contTag">留言内容：</span><textarea name="text"></textarea><span class="red">　(*必填){$contNull}</span></td></tr>
+                <tr><td><input type="submit" name="send" value="发表留言" class="btn">
+                    <input type="reset" value="重置编辑" class="btn"></td></tr>
+            </table>
+        </form>
+    </div>
+
+    {include file="footer.html"}
+</body>
+</html>

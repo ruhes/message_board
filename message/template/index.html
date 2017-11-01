@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+
+    {include file="header.html"}
+
+    <div id="message">
+        <h2>简单小留言板</h2>
+        <a href="release.php">发表留言</a>
+        <ul>
+            {foreach $allMessage(key,value)}
+            <li>
+                <div class="name" style="background: {@value->color}">{@value->name}　　时间：{@value->date}</div>
+                <div class="cont">{@value->cont}</div>
+            </li>
+            {/foreach}
+        </ul>
+        <div class="page">{$page}</div>
+    </div>
+    {include file="footer.html"}
+</body>
+</html>

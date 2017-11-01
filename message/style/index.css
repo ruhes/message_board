@@ -1,0 +1,105 @@
+body{
+    margin:0;
+}
+#header{
+    background:#393939;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 160px;
+}
+#header a{  text-decoration: none;  color: #ccc;  }
+#header a:hover{  color: white;  }
+#message{
+    width: 960px;
+    margin:0 auto;
+    min-height:350px;
+}
+#message h2{  margin:0 auto;  width: 145px;  padding:20px 0;  }
+#message a{
+    text-decoration: none;
+    color: sandybrown;
+    border:1px solid #ccc;
+    font-size: 16px;
+    padding:3px 6px;
+    margin-left: 180px;
+}
+#message a:hover{
+
+}
+#message ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+#message ul li{
+    background: white;
+    width: 600px;
+    margin:30px auto;
+    border:1px solid #ccc;
+}
+#message ul li .name{
+    line-height: 37px;
+    padding-left: 10px;
+    height:37px;
+}
+#message ul li .cont{
+    background: #eee;
+    min-height: 30px;
+    padding:10px;
+}
+#message .page{
+    padding-left: 250px;
+    margin-bottom: 20px;
+}
+#message .page a{
+    width: 60px;
+    margin:0;
+    border:1px solid #ccc;
+    color: deepskyblue;
+}
+#message .thisPage{
+    background: #393939;
+    color: white;
+}
+#release{
+    width: 960px;
+    margin:0 auto;
+    min-height:350px;
+}
+#release h2{  margin:0 auto;  width: 170px;  padding:20px 0;  }
+#release a{
+    text-decoration: none;
+    color: sandybrown;
+    border:1px solid #ccc;
+    font-size: 16px;
+    padding:3px 6px;
+    margin-left: 180px;
+}
+#release a:hover{
+
+}
+#release table{
+    width: 600px;
+    margin: 20px auto;
+}
+#release input{
+    height: 22px;
+    width:180px;
+}
+#release select{
+    height: 30px;
+    width:100px;
+}
+#release textarea{
+    height: 80px;
+    width:300px;
+}
+#release table .contTag{  vertical-align: top;  }
+#release table .red{  vertical-align: top; color: red; font-size: 14px  }
+
+#release .btn{  height: 27px;  width: 80px;  }
+#footer{
+    text-align: center;
+    margin-bottom: 10px;
+}
